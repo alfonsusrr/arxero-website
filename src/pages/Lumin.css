@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    .sec-heading {
+      @apply text-3xl text-transparent font-bold bg-clip-text bg-gradient-to-b from-lumin-grad-start to-lumin-grad-mid
+    }
+  }

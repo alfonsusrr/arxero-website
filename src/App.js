@@ -1,10 +1,7 @@
-import logo from './logo.svg';
 import {
-  BrowserRouter as Router,
+  Routes,
   Route,
-  Link,
-  useRouterMatch,
-  useParams
+  BrowserRouter as Router,
 } from "react-router-dom"
 
 import Home from './pages/Home';
@@ -16,12 +13,11 @@ import './App.css';
 function App() {
   return (
     <Router>
-        <Route path="/">
-          <Home/>
-        </Route>
-        <Route path="/lumin">
-          <Lumin/>
-        </Route>
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/lumin" element={<Lumin/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
+      </Routes>
     </Router>
   );
 }
