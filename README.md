@@ -1,1 +1,5 @@
-# arxero-website
+# Arxero Landing Page
+
+## Stack:
+- React
+- Tailwind CSS
