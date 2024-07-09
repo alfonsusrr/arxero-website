@@ -276,10 +276,10 @@ export default function Lumin() {
                 </div>
             </div>
             
-           <div className="w-full h-[700px] md:h-[650px] p-6 lg:p-14">
+           <div className="w-full h-full md:h-[650px] p-6 lg:p-14">
                 <div className="my-2 pb-4 sec-heading text-left">Benefits and Use Cases</div>
                 <div className="mt-2 flex flex-row items-center">
-                    <div className="hidden sm:block bg-white w-[400px] h-[580px] md:h-[520px] lg:h-[480px] rounded-3xl pt-6">
+                    <div className="hidden sm:block bg-white w-[400px] h-full md:h-[520px] lg:h-[480px] rounded-3xl pt-6">
                     {
                         industries.map((el, i) => {
                             return (
@@ -298,7 +298,7 @@ export default function Lumin() {
                     <div className="block sm:hidden cursor-pointer w-8 text-xl hover:text-2xl hover:text-lumin-grad-start transition-all" onClick={() => {setActiveBenefit((prev) =>  ((prev - 1) < 0 ? industries.length - 1 : prev - 1))}}>
                         <FontAwesomeIcon icon={faCircleChevronLeft}></FontAwesomeIcon>
                     </div>
-                    <div className="w-full ml-5 h-[580px] md:h-[520px] lg:h-[480px] rounded-xl bg-white flex flex-row items-center px-10">
+                    <div className="w-full ml-5 pb-5 h-full md:h-[520px] lg:h-[480px] rounded-xl bg-white flex flex-row items-center px-10">
                         <div className="flex flex-col h-full w-full lg:w-2/3 xl:w-1/2">
                             <div className="sm:hidden block text-3xl font-extrabold mt-8 lumin-grad-text">{industries[activeBenefit].name}</div>
                             <div className="text-2xl font-extrabold mt-4 sm:mt-8 mb-3">{industries[activeBenefit].challenge}</div>
