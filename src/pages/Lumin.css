@@ -4,6 +4,26 @@
 
 @layer components {
     .sec-heading {
-      @apply text-3xl text-transparent font-bold bg-clip-text bg-gradient-to-b from-lumin-grad-start to-lumin-grad-mid
+      @apply text-3xl text-transparent font-bold bg-clip-text bg-gradient-to-b from-lumin-grad-start to-lumin-grad-mid text-center
+    }
+
+    .lumin-grad-text {
+      @apply text-transparent bg-clip-text bg-gradient-to-b from-lumin-grad-start to-lumin-grad-mid
+    }
+
+    .dive-deep-sec {
+      @apply pb-10 h-[650px] items-center justify-center md:justify-center md:h-[400px] flex flex-row flex-wrap md:flex-nowrap items-center w-full px-2 md:px-20 lg:px-36 xl:px-[300px] 2xl:px-[400px]
+    }
+
+    .dive-deep-sec-text-wrapper {
+      @apply px-10 md:px-1 mx-auto flex flex-col items-start  justify-start
+    }
+
+    .benefits-active {
+      @apply lumin-grad-text font-bold cursor-pointer select-none transition-all !important 
+    }
+
+    .benefits-inactive {
+      @apply text-gray-400 hover:text-main-dark-blue cursor-pointer select-none transition-all
     }
   }

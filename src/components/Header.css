@@ -2,3 +2,67 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@layer components {
+    .header.active {
+        box-shadow: hsla(0 0% 0% / 0.1) 0 0.5rem 1rem;
+        transition-duration: 400ms;
+    }
+
+    .menu-btn {
+        @apply z-[3] cursor-pointer transition-all
+    }
+
+    /* Styling the hamburger lines */
+    .menu-btn .btn-line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0px;
+        background: black;
+        transition: all 0.5s ease-out;
+    }
+
+    /* Adding transform to the X */
+    .menu-btn.close {
+        transform: rotate(180deg);
+    }
+
+    /* Styling the three lines to make it an X */
+    .menu-btn.close .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-btn.close .btn-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-btn.close .btn-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    .menu {
+        @apply w-screen h-screen bg-white border-t-2  absolute top-[7rem] left-0 flex flex-col p-10
+    }
+    
+    .menu.open {
+        animation-name: menuFadeIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .menu.close{
+        animation-name: menuFadeOut;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes menuFadeIn {
+    1% { opacity: 0; visibility: hidden; }
+    2% { opacity: 0; visibility: visible;}
+    100% { opacity: 1; visibility: visible;}
+}
+@keyframes menuFadeOut {
+    1% { opacity: 1; visibility: visible;}
+    99% { opacity: 0; visibility: visible;}
+    100% { opacity: 0; visibility: hidden; }
+}

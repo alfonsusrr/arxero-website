@@ -1,0 +1,21 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    .footer-section {
+        @apply mb-2 my-1 flex flex-col
+    }
+
+    .footer-heading {
+        @apply text-2xl font-bold mb-4
+    };
+
+    .footer-text {
+        @apply font-normal text-base text-gray-500 mb-3 cursor-pointer hover:text-gray-600 transition-all
+    }
+
+    .social-btn {
+        @apply cursor-pointer w-12 2xl:w-16 
+    }
+}
