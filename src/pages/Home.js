@@ -1,6 +1,11 @@
+import { useEffect } from "react";
+import Footer from "../components/Footer";
 import HeaderArxero from "../containers/Headers/HeaderArxero";
 
 export default function Home() {
+    useEffect(() => {
+        document.title = 'Arxero | Home'; // Quick solution
+    }, []);
     return (
         <div className="bg-main-bg-grey h-screen w-screen">
             <HeaderArxero></HeaderArxero>
@@ -15,6 +20,7 @@ export default function Home() {
             <div className="bg-main-dark-blue w-screen">
                 
             </div>
+            <Footer/>
         </div>
     )
 }

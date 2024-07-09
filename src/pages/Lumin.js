@@ -8,7 +8,7 @@ import insights from "../assets/insights.json"
 import support from "../assets/support.json"
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../components/Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 import education from "../assets/industries/education.json"
@@ -23,6 +23,9 @@ import { faCircleChevronLeft } from "@fortawesome/free-solid-svg-icons/faCircleC
 import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons/faCircleChevronRight";
 
 export default function Lumin() {
+    useEffect(() => {
+        document.title = 'Arxero Lumin'; // Quick solution
+    }, []);
 
     const csChallenges = [{
         "title": "Inconsistent Service Quality",
