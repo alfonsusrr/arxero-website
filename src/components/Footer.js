@@ -8,7 +8,7 @@ export default function Footer() {
 
     return (
         <div>
-            <div className="w-full xl:h-[400px] 2xl:h-[380px] bg-pastel-blue flex flex-row justify-start items-start p-8">
+            <div className="w-full xl:h-[440px] 2xl:h-[460px] bg-pastel-blue flex flex-row justify-start items-start p-20">
                 <div className="mx-5 lg:mx-0 w-[360px] lg:w-[280px] 2xl:w-1/4 flex flex-col items-start">
                     <div className="w-32">
                         <img src="arxero_light_1.png"></img>
@@ -50,15 +50,15 @@ export default function Footer() {
                         <div className="footer-text"><Link to="/contact">Contact Support</Link></div>
                     </div>
                 </div>
-                <div className="md:block hidden lg:mt-0 xl:mt-11 ml-0 xl:ml-2 2xl:ml-2 w-full lg:w-auto">
-                    <div className="text-2xl xl:text-3xl font-bold">Subscribe to Our Newsletter</div>
+                <div className="md:block hidden lg:mt-0 2xl:mt-11 ml-0 xl:ml-2 2xl:ml-2 w-full lg:w-auto xl:w-[500px] 2xl:w-[600px]">
+                    <div className="text-2xl 2xl:text-3xl font-bold">Subscribe to Our Newsletter</div>
                     <div className="flex flex-row mt-4 flex-wrap">
-                        <input className="lg:w-full xl:w-[200px] 2xl:w-[250px] h-[50px] lg:h-[60px] border-input-border-light border-2 rounded-lg bg-input-fill-light p-3 outline-none text-main-dark-blue" placeholder="Your Name"></input>
-                        <input className="lg:w-full ml-2 lg:ml-0 lg:mt-3 xl:mt-0 xl:ml-3 xl:w-[200px] 2xl:w-[250px] h-[50px] lg:h-[60px] border-input-border-light border-2 rounded-lg bg-input-fill-light p-3 outline-none text-main-dark-blue" placeholder="Your Email"></input>
+                        <input className="lg:w-full xl:w-[180px] 2xl:w-[250px] h-[50px] lg:h-[60px] border-input-border-light border-2 rounded-lg bg-input-fill-light p-3 outline-none text-main-dark-blue" placeholder="Your Name"></input>
+                        <input className="lg:w-full ml-2 lg:ml-0 lg:mt-3 xl:mt-0 xl:ml-3 xl:w-[180px] 2xl:w-[250px] h-[50px] lg:h-[60px] border-input-border-light border-2 rounded-lg bg-input-fill-light p-3 outline-none text-main-dark-blue" placeholder="Your Email"></input>
                     </div>
                     <div className="transition-all cursor-pointer mt-4 bg-sec-dark-blue hover:bg-main-dark-blue rounded-full w-[160px] h-[50px] py-2 text-white text-center font-semibold text-lg">Subscribe</div>
 
-                    <div className="lg:block hidden mt-2 lg:mt-12 text-sm xl:text-lg text-gray-400">
+                    <div className="lg:block hidden mt-2 lg:mt-12 text-sm 2xl:text-lg text-gray-400">
                      © Copyright Arxero Technologies 2024. All Rights Reserved  
                     </div>
                 </div>
