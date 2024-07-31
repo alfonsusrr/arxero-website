@@ -1,6 +1,3 @@
-import { faFacebook, faInstagramSquare, faSquareXTwitter, faTiktok } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import "./Footer.css"
 import { Link } from "react-router-dom";
 
@@ -10,9 +7,9 @@ export default function Footer() {
         <div>
             <div className="w-full xl:h-[440px] 2xl:h-[460px] bg-pastel-blue flex flex-row justify-start items-start p-20">
                 <div className="mx-5 lg:mx-0 w-[360px] lg:w-[280px] 2xl:w-1/4 flex flex-col items-start">
-                    <div className="w-32">
+                    <Link to="/" reloadDocument className="w-32">
                         <img src="arxero_light_1.png"></img>
-                    </div>
+                    </Link>
                     <div className="mt-12 lg:mt-48 flex flex-row">
                         <div className="social-btn"><img src="/icon/Facebook.svg"></img></div>
                         <div className="social-btn"><img src="/icon/Instagram.svg"></img></div>
@@ -24,8 +21,8 @@ export default function Footer() {
                 <div className="lg:block hidden flex flex-col w-72">
                     <div className="footer-section">
                         <div className="footer-heading">Products</div>
-                        <div className="footer-text"><Link to="/lumin">Arxero Lumin</Link></div>
-                        <div className="footer-text"><Link to="/nitrous">Nitrous Developments</Link></div>
+                        <div className="footer-text"><Link to="/lumin" reloadDocument>Arxero Lumin</Link></div>
+                        <div className="footer-text"><Link to="https://nitrous.dev" reloadDocument>Nitrous Developments</Link></div>
                     </div>
                     <div className="footer-section">
                         <div className="footer-heading">Solutions</div>
@@ -46,8 +43,8 @@ export default function Footer() {
                     </div>
                     <div className="footer-section">
                         <div className="footer-heading">Company</div>
-                        <div className="footer-text"><Link to="/about">About Us</Link></div>
-                        <div className="footer-text"><Link to="/contact">Contact Support</Link></div>
+                        <div className="footer-text"><Link to="/about" reloadDocument>About Us</Link></div>
+                        <div className="footer-text"><Link to="/contact" reloadDocument>Contact Support</Link></div>
                     </div>
                 </div>
                 <div className="md:block hidden lg:mt-0 2xl:mt-11 ml-0 xl:ml-2 2xl:ml-2 w-full lg:w-auto xl:w-[500px] 2xl:w-[600px]">
@@ -67,8 +64,8 @@ export default function Footer() {
                 <div className="flex flex-col w-1/2">
                     <div className="footer-section">
                         <div className="footer-heading">Products</div>
-                        <div className="footer-text"><Link to="/lumin">Arxero Lumin</Link></div>
-                        <div className="footer-text"><Link to="/nitrous">Nitrous Developments</Link></div>
+                        <div className="footer-text"><Link to="/lumin" reloadDocument>Arxero Lumin</Link></div>
+                        <div className="footer-text"><Link to="/nitrous" reloadDocument>Nitrous Developments</Link></div>
                     </div>
                     <div className="footer-section">
                         <div className="footer-heading">Solutions</div>
@@ -88,8 +85,8 @@ export default function Footer() {
                     </div>
                     <div className="footer-section">
                         <div className="footer-heading">Company</div>
-                        <div className="footer-text"><Link to="/about">About Us</Link></div>
-                        <div className="footer-text"><Link to="/contact">Contact Support</Link></div>
+                        <div className="footer-text"><Link reloadDocument={true} to="/about" >About Us</Link></div>
+                        <div className="footer-text"><Link reloadDocument={true} to="/contact">Contact Support</Link></div>
                     </div>
                 </div>
             </div>

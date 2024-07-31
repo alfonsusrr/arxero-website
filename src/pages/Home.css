@@ -1,0 +1,10 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    .feature-box {
+        @apply h-[350px] select-none mx-3 bg-white bg-opacity-25 w-[300px] border border-[#8F8F8F] rounded-[24px] p-4 flex flex-col items-center justify-center text-center;
+        @apply hover:shadow-xl hover:bg-opacity-50 transition-all;
+    }
+}

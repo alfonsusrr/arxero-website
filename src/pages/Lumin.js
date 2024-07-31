@@ -1,26 +1,28 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import HeaderLumin from "../containers/Headers/HeaderLumin";
+import HeaderLumin from "../components/HeaderLumin";
 import './Lumin.css'
 import { faDatabase, faHeadset, faLanguage, faUpRightAndDownLeftFromCenter } from "@fortawesome/free-solid-svg-icons";
 import Lottie from "react-lottie";
-import automation from "../assets/automation.json"
-import insights from "../assets/insights.json"
-import support from "../assets/support.json"
+import automation from "../assets/lottie/automation.json"
+import insights from "../assets/lottie/insights.json"
+import support from "../assets/lottie/support.json"
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
 
 
-import education from "../assets/industries/education.json"
-import finance from "../assets/industries/finance.json"
-import fnb from "../assets/industries/fnb.json"
-import logistics from "../assets/industries/logistics.json"
-import online_shop from "../assets/industries/online_shop.json"
-import real_estate from "../assets/industries/real_estate.json"
-import telco from "../assets/industries/telco.json"
-import tourism from "../assets/industries/tourism.json"
+import education from "../assets/lottie/industries/education.json"
+import finance from "../assets/lottie/industries/finance.json"
+import fnb from "../assets/lottie/industries/fnb.json"
+import logistics from "../assets/lottie/industries/logistics.json"
+import online_shop from "../assets/lottie/industries/online_shop.json"
+import real_estate from "../assets/lottie/industries/real_estate.json"
+import telco from "../assets/lottie/industries/telco.json"
+import tourism from "../assets/lottie/industries/tourism.json"
 import { faCircleChevronLeft } from "@fortawesome/free-solid-svg-icons/faCircleChevronLeft";
 import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons/faCircleChevronRight";
+
+import "../Global.css"
 
 export default function Lumin() {
     useEffect(() => {
@@ -141,7 +143,7 @@ export default function Lumin() {
 
     const [activeBenefit, setActiveBenefit] = useState(0)
 
-    
+
     return (
         <div className="bg-main-bg-lumin w-screen max-w-full overflow-visible min-h-screen min-w-full">
             <HeaderLumin></HeaderLumin>
@@ -157,10 +159,9 @@ export default function Lumin() {
                 w-screen h-[375px] md:h-[300px] relative inline-block max-w-full
             ">
                 <div className="w-full flex flex-col items-center justify-start pt-14">
-                    <div className="text-white font-bold text-3xl">Our Vision</div>
+                    <div className="text-white font-bold text-3xl">Introducing Lumin</div>
                     <div className="text-white text-wrap text-2xl font-light w-2/3 text-center pt-10">
-                        To revolutionize customer service through intelligent automation, 
-                        delivering unparalleled efficiency and satisfaction for businesses worldwide
+                        An advanced AI-powered conversation system designed to enhance business customer service by providing quick, accurate, and personalized responses equipped with automation and analytics tools.
                     </div>
                 </div>
             </div> 
@@ -170,7 +171,7 @@ export default function Lumin() {
                 <div className="flex flex-row mt-8 flex-wrap xl:mx-0 justify-center">
                     { csChallenges.map((el) => {
                         return (
-                            <div className="bg-gray-200 my-4 rounded-xl mx-3 w-[350px] h-[400px] flex flex-col items-center p-8">
+                            <div className="bg-[#E7F0F7] my-4 rounded-5xl mx-3 w-[350px] h-[400px] flex flex-col items-center p-8 border border-[#C6C6C6] select-none hover:drop-shadow-xl">
                                 <div className="flex flex-col justify-center h-40 text-6xl text-main-dark-blue">
                                     <FontAwesomeIcon icon={el.icon}/>
                                 </div>
@@ -186,7 +187,7 @@ export default function Lumin() {
                 </div>
             </div>   
 
-            <div className="w-full flex flex-col items-center justify-start pt-40">
+            <section id="dive-deep" className="w-full flex flex-col items-center justify-start pt-40">
                 <div className="sec-heading">Dive Deep Into Arxero Lumin</div>
                 <div className="mt-6 dive-deep-sec bg-pastel-blue">
                     <div className="md:mb-12">
@@ -257,9 +258,29 @@ export default function Lumin() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="w-full bg-main-dark-blue h-[550px] md:h-[360px] flex flex-col items-center justify-start select-none">
+            <section id="lumin-sense" className="relative w-full h-[700px] bg-white px-28 py-36 flex">
+                <div className="fixed absolute -top-12 left-0 z-20">
+                    <img className="h-[600px]" src="lumin_assets/Ellipse 3.png"></img>
+                </div>
+                <div className="w-2/5 z-20">
+                    <div className="sec-heading text-left text-2xl">Introducing Lumin Sense</div>
+                    <div className="text-4xl font-bold mt-1">Smart Detection for Seamless Support</div>
+                    <div className="text-arxero-text-gray mt-10 text-lg">
+                        Our cutting-edge feature designed to detect when the AI bot encounters difficulties 
+                        with customer interactions. Lumin Sense swiftly alerts your admin or team member, 
+                        ensuring immediate attention to potential issues and maintaining seamless customer service. 
+                        Stay proactive and responsive with Lumin Sense, safeguarding your business reputation and 
+                        customer satisfaction.
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </section>
+
+            <section id="why-us" className="w-full bg-main-dark-blue h-[550px] md:h-[360px] flex flex-col items-center justify-start select-none">
                 <div className="text-3xl text-white mt-8 font-semibold text-center">We create platforms that deliver success</div>
                 <div className="flex flex-row justify-center md:justify-start items-center text-white mt-8 flex-wrap md:flex-nowrap">
                     {
@@ -277,7 +298,7 @@ export default function Lumin() {
                         })
                     }
                 </div>
-            </div>
+            </section>
             
            <div className="w-full h-full md:h-[650px] p-6 lg:p-14">
                 <div className="my-2 pb-4 sec-heading text-left">Benefits and Use Cases</div>
@@ -288,7 +309,7 @@ export default function Lumin() {
                             return (
                                 <div className="flex flex-row">
                                     <div 
-                                        className={`pl-10 py-3 ${i == industries.length - 1 ? "" : "border-b-2"} border-gray-100 w-full text-xl ${activeBenefit == i ? "benefits-active" : "benefits-inactive"}`}
+                                        className={`pl-10 py-3 ${i === industries.length - 1 ? "" : "border-b-2"} border-gray-100 w-full text-xl ${activeBenefit === i ? "benefits-active" : "benefits-inactive"}`}
                                         onClick={() => {
                                             setActiveBenefit(i)
                                         }}

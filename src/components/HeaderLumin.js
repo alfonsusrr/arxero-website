@@ -1,8 +1,28 @@
 import { useState } from "react"
 import "./Header.css"
+import { Link } from "react-router-dom"
 
 export default function Header(props) {
-    const { links, isSignIn, logoSource } = props
+    const links = [
+        {
+            title: "Features", 
+            link: "#dive-deep"
+        },
+        {
+            title: "Why Us?", 
+            link: "#why-us"
+        },
+        {
+            title: "Case Study", 
+            link: "#case-study"
+        }, 
+        {
+            title: "Plans",
+            link: "/lumin/pricing/"
+        }
+    ]
+    const isSignIn = true
+    const logoSource = "arxero_lumin_light.png"
     const [menuOpened, setMenuOpened] = useState(false)
     const [addShadow, setAddShadow] = useState(false)
 
@@ -15,11 +35,14 @@ export default function Header(props) {
         <div className={`header sticky top-0 w-full z-50 h-auto bg-main-bg-lumin ${addShadow ? "active" : ""}`} data-observer-intercept>
             <div className="hidden lg:flex flex-row items-center h-28 pt-8 p-5">
                 <img className="h-12 xl:h-16 ml-16" src={logoSource}></img>
-                <div className="flex ml-auto cursor-pointer text-main-dark-blue text-lg items-center">
+                <div className="flex ml-auto cursor-pointer text-main-dark-blue text-lg items-center font-semibold">
                     {
                         links.map((el) =>{
                             return (
-                                <div className="mx-10">{el}</div>
+                                <Link to={el.link} className="group relative mx-10">
+                                    <div className="absolute w-[110%] -left-1 bottom-[0.1rem] h-[0.5rem] bg-lumin-grad-end z-40 group-hover:opacity-50 opacity-0 transition-all"></div>
+                                    <div className="z-50 relative">{el.title}</div>
+                                </Link>
                             )
                         })
                     }
@@ -48,7 +71,7 @@ export default function Header(props) {
                     {
                         links.map((el) =>{
                             return (
-                                <div className="text-xl text-gray-700 font-normal my-4 hover:text-gray-900">{el}</div>
+                                <Link to={el.link} className="text-xl text-gray-700 font-normal my-4 hover:text-gray-900">{el.title}</Link>
                             )
                         })
                     }
