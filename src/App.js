@@ -7,6 +7,7 @@ import {
 import Home from './pages/Home';
 import About from './pages/About';
 import Lumin from './pages/Lumin';
+import LuminPricing from "./pages/LuminPricing";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/lumin" element={<Lumin/>}></Route>
+        <Route path="/lumin/pricing" element={<LuminPricing/>}></Route>
         <Route path="/about" element={<About/>}></Route>
       </Routes>
     </Router>

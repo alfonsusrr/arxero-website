@@ -9,7 +9,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
     useEffect(() => {
-        document.title = 'Arxero | Home'; // Quick solution
+        document.title = 'Arxero Technologies';
     }, []);
     return (
         <div className="bg-main-bg-arxero h-screen max-w-full min-w-full">
@@ -17,10 +17,10 @@ export default function Home() {
             <div className="w-full h-[calc(100%-7rem)] select-none">
                 {/* Welcome Section */}
                 <div className="fixed absolute top-24">
-                    <img className="h-[600px]" src="homepage_assets/Ellipse 2.png"></img>
+                    <img className="h-[600px]" src="/homepage_assets/Ellipse 2.png"></img>
                 </div>
                 <div className="fixed absolute top-28 right-0">
-                    <img className="h-[600px]" src="homepage_assets/Ellipse 3.png"></img>
+                    <img className="h-[600px]" src="/homepage_assets/Ellipse 3.png"></img>
                 </div>
                 <div className="flex flex-row relative items-end h-full">
                     <div className="my-auto pl-18 xl:pl-24 font-bold sm:text-3xl md:text-4xl xl:text-5xl w-[55%] mt-32">
@@ -52,7 +52,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="ml-auto right-0">
-                        <img className="" src="homepage_assets/Placeholder 1.png"></img>
+                        <img className="" src="/homepage_assets/Placeholder 1.png"></img>
                         <div className="absolute bottom-0 right-0 w-[400px] h-[200px] bg-[#0C2566] bg-opacity-50 rounded-tl-3xl p-8 backdrop-blur-sm">
                             <div className="text-white font-semibold text-2xl opacity-100">
                                 Ready for Transform Your Business With Us?
@@ -67,10 +67,10 @@ export default function Home() {
             {/* Tagline Section */}
             <section className="bg-dark-blue-2 relative h-[450px] py-24 px-36">
                 <div className="fixed absolute top-3 left-0">
-                    <img className="h-[600px]" src="homepage_assets/Ellipse 4.png"></img>
+                    <img className="h-[600px]" src="/homepage_assets/Ellipse 4.png"></img>
                 </div>
                 <div className="fixed absolute top-2 right-0">
-                    <img className="h-[600px]" src="homepage_assets/Ellipse 5.png"></img>
+                    <img className="h-[600px]" src="/homepage_assets/Ellipse 5.png"></img>
                 </div>
                 <div className="flex">
                     <div className="w-2/5">
@@ -133,10 +133,10 @@ export default function Home() {
                 
                 <div className="mt-40 flex relative">
                     <div className="fixed absolute -top-[300px] left-0 z-10">
-                        <img className="h-[1000px]" src="homepage_assets/Ellipse 6.png"></img>
+                        <img className="h-[1000px]" src="/homepage_assets/Ellipse 6.png"></img>
                     </div>
                     <div className="fixed absolute -top-[400px] right-0 z-10">
-                        <img className="h-[1000px]" src="homepage_assets/Ellipse 7.png"></img>
+                        <img className="h-[1000px]" src="/homepage_assets/Ellipse 7.png"></img>
                     </div>
                     <div className="w-[65%]"></div>
                     <div>
@@ -162,10 +162,10 @@ export default function Home() {
             {/* Product Catalogues */}
             <section className="relative bg-dark-blue-2 w-full h-[640px] p-24" id="services">
                 <div className="fixed absolute top-64 -left-7 z-10">
-                    <img className="h-[500px]" src="homepage_assets/Ellipse 8.png"></img>
+                    <img className="h-[500px]" src="/homepage_assets/Ellipse 8.png"></img>
                 </div>
                 <div className="fixed absolute top-10 right-0">
-                    <img className="h-[500px]" src="homepage_assets/Ellipse 9.png"></img>
+                    <img className="h-[500px]" src="/homepage_assets/Ellipse 9.png"></img>
                 </div>
                 <Link to="/lumin" reloadDocument className="z-20 flex items-center bg-white rounded-3xl border border-dark-blue-2-stroke h-[250px] bg-glowing-radial-box hover:bg-glowing-radial-box-raised from-grad-3-start via-grad-3-end to-grad-3-end bg-opacity-20 cursor-pointer transition-all">
                     <div className="ml-20 text-[#05BCE6] text-6xl font-bold">

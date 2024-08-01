@@ -7,8 +7,8 @@ export default function Footer() {
         <div>
             <div className="w-full xl:h-[440px] 2xl:h-[460px] bg-pastel-blue flex flex-row justify-start items-start p-20">
                 <div className="mx-5 lg:mx-0 w-[360px] lg:w-[280px] 2xl:w-1/4 flex flex-col items-start">
-                    <Link to="/" reloadDocument className="w-32">
-                        <img src="arxero_light_1.png"></img>
+                    <Link to="/" reloadDocument className="w-32 cursor-pointer">
+                        <img src="/arxero_light_1.png"></img>
                     </Link>
                     <div className="mt-12 lg:mt-48 flex flex-row">
                         <div className="social-btn"><img src="/icon/Facebook.svg"></img></div>

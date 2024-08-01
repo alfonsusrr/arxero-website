@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function HeaderArxero(props) {
     const { active } = props
@@ -31,9 +33,9 @@ export default function HeaderArxero(props) {
     return (
         <div className={`header sticky top-0 w-full z-50 bg-main-bg-arxero ${addShadow ? "active" : ""}`}>
             <div className="hidden lg:flex flex-row items-center h-28 pt-8 p-5">
-                <div className="w-1/5">
+                <Link className="w-1/5 cursor-pointer" to="/">
                     <img className="h-12 xl:h-16 ml-16" src={logoSource}></img>
-                </div>
+                </Link>
                 <div className="flex cursor-pointer text-main-dark-blue text-lg font-semibold items-center justify-center w-3/5">
                     {
                         links.map((el) =>{
@@ -46,8 +48,9 @@ export default function HeaderArxero(props) {
                     }
                 </div>
                 { isSignIn && (
-                    <div className="ml-auto ml-2 xl:ml-8 transition-all border-main-dark-blue border-[2px] font-medium hover:bg-main-dark-blue hover:text-white rounded-2xl text-lg h-10 w-30 xl:text-xl xl:h-14 xl:w-32 px-4 xl:px-7 pt-[2px] xl:pt-[9px]">
-                        Login 
+                    <div className="cursor-pointer flex flex-row ml-auto ml-2 xl:ml-8 transition-all border-main-dark-blue border-[2px] font-medium hover:bg-main-dark-blue hover:text-white rounded-3xl text-lg h-8 w-30 xl:text-xl xl:h-12 xl:w-32 px-2 xl:px-6 pt-[2px] xl:pt-[6px]">
+                        <div><FontAwesomeIcon className="mr-2" icon={faUser}></FontAwesomeIcon></div>
+                        <div>Login</div>
                     </div>
                 )}
             </div>

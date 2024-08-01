@@ -37,14 +37,14 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <section id="meet-our-team" className="relative bg-dark-blue-2 h-[500px] w-full p-24 flex">
+            <section id="meet-our-team" className="relative bg-dark-blue-2 h-[500px] w-full px-24 pt-20 flex">
                 <div className="fixed absolute -top-10 right-0">
-                    <img className="h-[600px]" src="about_assets/Ellipse 3.png"></img>
+                    <img className="h-[600px]" src="/about_assets/Ellipse 3.png"></img>
                 </div>
                 <div className="fixed absolute -top-5 left-0">
-                    <img className="h-[600px]" src="about_assets/Ellipse 2.png"></img>
+                    <img className="h-[600px]" src="/about_assets/Ellipse 2.png"></img>
                 </div>
-                <div className="w-2/5">
+                <div className="w-1/3 xl:w-2/5">
                     <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-grad-1-start via-grad-1-mid to-grad-1-end">Meet Our Team</div>
                     <div className="mt-16 text-xl text-arxero-text-light-gray w-[400px] ">
                         Founded by three undergraduates from CUHK Shenzhen, our team brings together 
@@ -53,18 +53,18 @@ export default function About() {
                     </div>
                 </div>
                 <div className="flex">
-                    <div className="mr-5">
-                        <div className="bg-white h-full w-[250px] rounded-3xl"></div>
+                    <div className="mr-1 w-[280px] flex flex-col items-center">
+                        <div className="bg-white w-[250px] h-[300px] rounded-3xl"></div>
                         <div className="mt-3 text-arxero-text-light-gray text-center text-lg font-semibold">Alfonsus Rodriques Rendy</div>
                         <div className="text-gray-500 text-center"> Co-Founder, Technical & Design</div>
                     </div>
-                    <div className="mr-5">
-                        <div className="bg-white h-full w-[250px] rounded-3xl"></div>
+                    <div className="mr-1 w-[280px] flex flex-col items-center">
+                        <div className="bg-white h-[300px] w-[250px] rounded-3xl"></div>
                         <div className="mt-3 text-arxero-text-light-gray text-center text-lg font-semibold">Stephen Kowinto</div>
                         <div className="text-gray-500 text-center"> Co-Founder, Business & Operations</div>
                     </div>
-                    <div className="mr-5">
-                        <div className="bg-white h-full w-[250px] rounded-3xl"></div>
+                    <div className="w-[280px] flex flex-col items-center">
+                        <div className="bg-white h-[300px] w-[250px] rounded-3xl"></div>
                         <div className="mt-3 text-arxero-text-light-gray text-center text-lg font-semibold">Nicholas Oh</div>
                         <div className="text-gray-500 text-center"> Co-Founder, Technical & Product</div>
                     </div>

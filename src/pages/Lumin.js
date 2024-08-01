@@ -260,9 +260,9 @@ export default function Lumin() {
                 </div>
             </section>
 
-            <section id="lumin-sense" className="relative w-full h-[700px] bg-white px-28 py-36 flex">
+            <section id="lumin-sense" className="relative w-full h-[600px] bg-white px-28 py-36 flex">
                 <div className="fixed absolute -top-12 left-0 z-20">
-                    <img className="h-[600px]" src="lumin_assets/Ellipse 3.png"></img>
+                    <img className="h-[600px]" src="/lumin_assets/Ellipse 3.png"></img>
                 </div>
                 <div className="w-2/5 z-20">
                     <div className="sec-heading text-left text-2xl">Introducing Lumin Sense</div>
@@ -275,12 +275,9 @@ export default function Lumin() {
                         customer satisfaction.
                     </div>
                 </div>
-                <div>
-
-                </div>
             </section>
 
-            <section id="why-us" className="w-full bg-main-dark-blue h-[550px] md:h-[360px] flex flex-col items-center justify-start select-none">
+            <section id="why-us" className="w-full pt-8 bg-main-dark-blue h-[550px] md:h-[360px] flex flex-col items-center justify-start select-none">
                 <div className="text-3xl text-white mt-8 font-semibold text-center">We create platforms that deliver success</div>
                 <div className="flex flex-row justify-center md:justify-start items-center text-white mt-8 flex-wrap md:flex-nowrap">
                     {
@@ -300,7 +297,7 @@ export default function Lumin() {
                 </div>
             </section>
             
-           <div className="w-full h-full md:h-[650px] p-6 lg:p-14">
+           <section id="case-study" className="w-full h-full md:h-[650px] p-6 lg:p-14">
                 <div className="my-2 pb-4 sec-heading text-left">Benefits and Use Cases</div>
                 <div className="mt-2 flex flex-row items-center">
                     <div className="hidden sm:block bg-white w-[400px] h-full md:h-[520px] lg:h-[480px] rounded-3xl pt-6">
@@ -361,9 +358,9 @@ export default function Lumin() {
                         <FontAwesomeIcon icon={faCircleChevronRight}></FontAwesomeIcon>
                     </div>
                 </div>
-            </div> 
+            </section> 
 
-            <div className="
+            <section id="call-for-action" className="
                 bg-action-bg bg-cover bg-no-repeat bg-top z-10
                 before:content-[''] before:absolute before:block before:inset-0 before:bg-main-dark-blue before:opacity-60 before:z-[-5]
                 w-screen h-[480px] md:h-[360px] relative inline-block max-w-full flex flex-col justify-center md:justify-start
@@ -375,7 +372,7 @@ export default function Lumin() {
                     </div>
                     <div className="flex flex-row mt-8">
                         <div className="mx-2 w-44 h-14 bg-white hover:bg-gray-200 transition-all rounded-xl flex flex-row items-center cursor-pointer">
-                            <div><img src="lumin_icon.png" className="w-8 ml-5"></img></div>
+                            <div><img src="/lumin_icon.png" className="w-8 ml-5"></img></div>
                             <div className="ml-auto pr-4 lumin-grad-text text-xl font-bold">Ask Lumin</div>
                         </div>
 
@@ -385,7 +382,7 @@ export default function Lumin() {
                         </div>
                     </div>
                 </div>
-            </div> 
+            </section> 
             <Footer></Footer>
         </div>
     )

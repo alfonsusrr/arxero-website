@@ -1,0 +1,41 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    .price-box {
+        @apply relative w-[400px] h-[650px] bg-white rounded-3xl bg-[#FCFCFD] mx-3
+    }
+
+    .price-box-header {
+        @apply absolute flex flex-col items-center top-0 right-0 w-full bg-black rounded-t-3xl h-[240px] p-10 bg-gradient-to-r
+    }
+
+    .price-payment-box {
+        @apply flex flex-row items-center mt-3 text-lg
+    }
+
+    .price-payment-btn {
+        @apply mr-1 cursor-pointer px-[0.5rem] py-[0.3rem] hover:bg-white/5 transition-all rounded-full hover:text-white
+    }
+
+    .price-payment-btn.active {
+        @apply font-bold text-white rounded-full bg-gradient-to-r from-white/10 to-[#4F4F4F]/10
+    }
+
+    .price-text {
+        @apply text-4xl text-white font-bold mt-5
+    }
+
+    .price-box__feature-list {
+        @apply flex items-start justify-start my-1
+    }
+
+    .price_box__feature-text {
+        @apply text-lg font-semibold
+    }
+    
+    .price_box__feature-icon {
+        @apply rounded-full w-7 h-7 mr-4 py-[0.12rem] px-[0.5rem] text-white font-bold
+    }
+}
