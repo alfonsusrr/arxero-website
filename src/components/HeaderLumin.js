@@ -68,7 +68,7 @@ export default function Header(props) {
                 </div>
             </div>
             <div className="flex lg:hidden flex-row items-center h-28 pt-8 p-5">
-                <Link to="/lumin" reloadDocument><img className="h-12 xl:h-16 ml-4 md:ml-16" src={logoSource}></img></Link>
+                <Link to="/lumin" reloadDocument><img className="h-9 md:h-12 xl:h-16 ml-4 md:ml-16" src={logoSource}></img></Link>
                 <div className="flex ml-auto cursor-pointer text-main-dark-blue text-lg items-center">
                     { isSignIn && (
                             <div className="flex mx-3 xl:ml-8 transition-all border-main-dark-blue border-[2px] font-medium hover:bg-main-dark-blue hover:text-white rounded-2xl text-lg h-10 w-32 xl:text-xl xl:h-14 xl:w-32 px-4 xl:px-7 pt-[2px] xl:pt-[9px]">
