@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import "./Header.css"
 import { Link } from "react-router-dom"
 import { faUser } from "@fortawesome/free-regular-svg-icons"
@@ -28,13 +28,24 @@ export default function Header(props) {
     const [menuOpened, setMenuOpened] = useState(false)
     const [addShadow, setAddShadow] = useState(false)
 
-    // const observer = new IntersectionObserver(([entry]) => {
-    //     setAddShadow(!entry.isIntersecting)
-    // });
+    const [header, setHeader] = useState("header")
+
+    const listenScrollEvent = (event) => {
+        if (window.scrollY < 70) {
+          return setHeader("header-lumin")
+        } else if (window.scrollY > 70) {
+          return setHeader("header-lumin-scrolled")
+        } 
+      }
       
-    // observer.observe(intercept);
+      useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent);
+      
+        return () =>
+          window.removeEventListener('scroll', listenScrollEvent);
+      }, []);
     return (
-        <div className={`header sticky top-0 w-full z-50 h-auto bg-main-bg-lumin ${addShadow ? "active" : ""}`} data-observer-intercept>
+        <div className={`${header} sticky top-0 w-full z-50 h-auto`}>
             <div className="hidden lg:flex flex-row items-center h-28 pt-8 p-5">
                 <Link to="/lumin" reloadDocument><img className="h-12 xl:h-16 ml-16 cursor-pointer" src={logoSource}></img></Link>
                 <div className="flex ml-auto cursor-pointer text-main-dark-blue text-lg items-center font-semibold">

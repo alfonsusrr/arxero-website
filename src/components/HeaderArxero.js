@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "./Header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
@@ -29,9 +29,27 @@ export default function HeaderArxero(props) {
 
     const [menuOpened, setMenuOpened] = useState(false)
     const [addShadow, setAddShadow] = useState(false)
+    const [header, setHeader] = useState("header")
+
+    const listenScrollEvent = (event) => {
+        if (window.scrollY < 70) {
+          return setHeader("header")
+        } else if (window.scrollY > 70) {
+          return setHeader("header-scrolled")
+        } 
+      }
+      
+      useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent);
+      
+        return () =>
+          window.removeEventListener('scroll', listenScrollEvent);
+      }, []);
 
     return (
-        <div className={`header sticky top-0 w-full z-50 bg-main-bg-arxero ${addShadow ? "active" : ""}`}>
+
+
+        <div className={`${header} sticky top-0 w-full z-50`}>
             <div className="hidden lg:flex flex-row items-center h-28 pt-8 p-5">
                 <Link className="w-1/5 cursor-pointer" to="/">
                     <img className="h-12 xl:h-16 ml-16" src={logoSource}></img>

@@ -3,6 +3,23 @@
 @import 'tailwindcss/utilities';
 
 @layer components {
+    .header {
+        @apply bg-main-bg-arxero;
+    }
+
+    .header-scrolled {
+        @apply bg-main-bg-arxero bg-opacity-80 backdrop-blur-sm drop-shadow-lg;
+    }
+
+    .header-lumin {
+        @apply bg-main-bg-lumin;
+    }
+
+    .header-lumin-scrolled {
+        @apply bg-main-bg-lumin bg-opacity-80 backdrop-blur-sm drop-shadow-lg;
+    }
+
+
     .header.active {
         box-shadow: hsla(0 0% 0% / 0.1) 0 0.5rem 1rem;
         transition-duration: 400ms;
