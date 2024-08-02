@@ -280,10 +280,10 @@ export default function LuminPricing() {
                 </div>
             </section>
             <section id="key-features" className="relative bg-main-bg-lumin mt-3 flex flex-col items-center">
-                <div className="fixed absolute top-0 right-0">
+                <div className="fixed absolute top-0 right-0 z-0">
                     <img className="h-[600px]" src="/luminpricing_assets/Ellipse 3.png"></img>
                 </div>
-                <div className="fixed absolute top-44 left-0">
+                <div className="fixed absolute top-44 left-0 z-0">
                     <img className="h-[600px]" src="/luminpricing_assets/Ellipse 4.png"></img>
                 </div>
                 <div className="text-center font-bold text-4xl">Our Key Features</div>
@@ -291,7 +291,7 @@ export default function LuminPricing() {
                     {
                         features.map((feature) => {
                             return (
-                                <div className="rounded-3xl bg-[#F1F7FF] border border-[#8F8F8F] h-[300px] w-[400px] m-3 p-5 hover:shadow-xl">
+                                <div className="z-40 rounded-3xl bg-[#F1F7FF] border border-[#8F8F8F] h-[300px] w-[400px] m-3 p-5 hover:shadow-xl">
                                     <div className="w-16 h-16 my-3"></div>
                                     <div className="text-2xl font-semibold text-main-dark-blue py-3">{feature.name}</div>
                                     <div className="text-lg text-arxero-text-gray leading-tight">{feature.desc}</div>
@@ -314,7 +314,7 @@ export default function LuminPricing() {
                     {
                         keyMetrics.map((metric) => {
                             return (
-                                <div className="rounded-3xl bg-glowing-radial-box from-grad-3-start via-grad-3-end to-grad-3-end bg-opacity-20 border border-[#20214A] h-[220px] w-[450px] m-1 p-8 hover:shadow-xl">
+                                <div className="rounded-3xl bg-glowing-radial-box from-grad-3-start via-grad-3-end to-grad-3-end bg-opacity-20 border border-[#20214A] h-[220px] w-[90%] lg:w-[450px] m-1 p-8 hover:shadow-xl">
                                     <div className="w-12 h-12"><img src={metric.icon}></img></div>
                                     <div className="text-xl font-bold text-[#313970] py-1">{metric.name}</div>
                                     <div className="text-lg text-[#505579] leading-tight">{metric.desc}</div>

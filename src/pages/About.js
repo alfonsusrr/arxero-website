@@ -76,7 +76,7 @@ export default function About() {
                 </div>
                 <div className="w-3/4 lg:w-1/2 xl:w-2/5 h-full">
                     <div className="text-2xl font-semibold">Grow With Arxero</div>
-                    <div className="mt-3 text-4xl font-bold w-[370px]">Join Us Now and Unlock Your Potential</div>
+                    <div className="mt-3 text-4xl font-bold">Join Us Now and Unlock Your Potential</div>
                     <div className="mt-5 text-lg text-arxero-text-gray">
                     We are always on the lookout for talented individuals who share our passion for innovation and technology. 
                     We offer internships and career opportunities for those eager to contribute to our mission and 

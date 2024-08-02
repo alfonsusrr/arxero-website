@@ -145,7 +145,7 @@ export default function Lumin() {
 
 
     return (
-        <div className="bg-main-bg-lumin w-screen max-w-full overflow-visible min-h-screen min-w-full">
+        <div className="bg-main-bg-lumin min-h-screen">
             <HeaderLumin></HeaderLumin>
             <div className="h-[calc(100vh-theme(height.header))] flex flex-col justify-start items-center">
                 <div className="text-gray-500 text-2xl my-3 font-semibold w-32 rounded-full border-2 border-gray-300 text-center h-12 py-1 select-none">Lumin</div>
@@ -260,7 +260,7 @@ export default function Lumin() {
                 </div>
             </section>
 
-            <section id="lumin-sense" className="relative w-full min-h-max xl:h-[600px] bg-white px-28 py-36 flex">
+            {/* <section id="lumin-sense" className="relative w-full min-h-max xl:h-[600px] bg-white px-28 py-36 flex">
                 <div className="fixed absolute -top-12 left-0 z-20">
                     <img className="h-[600px]" src="/lumin_assets/Ellipse 3.png"></img>
                 </div>
@@ -297,7 +297,7 @@ export default function Lumin() {
                         })
                     }
                 </div>
-            </section>
+            </section> */}
             
            <section id="case-study" className="w-full h-full md:h-[650px] p-6 lg:p-14">
                 <div className="my-2 pb-4 sec-heading text-left">Benefits and Use Cases</div>

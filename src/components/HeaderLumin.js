@@ -60,7 +60,7 @@ export default function Header(props) {
                 <img className="h-12 xl:h-16 ml-4 md:ml-16" src={logoSource}></img>
                 <div className="flex ml-auto cursor-pointer text-main-dark-blue text-lg items-center">
                 { isSignIn && (
-                        <div className="flex mx-8 xl:ml-8 transition-all border-main-dark-blue border-[2px] font-medium hover:bg-main-dark-blue hover:text-white rounded-2xl text-lg h-10 w-32 xl:text-xl xl:h-14 xl:w-32 px-4 xl:px-7 pt-[2px] xl:pt-[9px]">
+                        <div className="flex mx-3 xl:ml-8 transition-all border-main-dark-blue border-[2px] font-medium hover:bg-main-dark-blue hover:text-white rounded-2xl text-lg h-10 w-32 xl:text-xl xl:h-14 xl:w-32 px-4 xl:px-7 pt-[2px] xl:pt-[9px]">
                             <div><FontAwesomeIcon className="mr-2" icon={faUser}></FontAwesomeIcon></div>
                             <div>Sign In</div>
                         </div>

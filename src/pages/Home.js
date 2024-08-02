@@ -23,7 +23,7 @@ export default function Home() {
                     <img className="h-[600px]" src="/homepage_assets/Ellipse 3.png"></img>
                 </div>
                 <div className="flex flex-row relative items-end h-full">
-                    <div className="my-auto pl-18 pl-16 xl:pl-24 font-bold  text-3xl md:text-4xl xl:text-4xl w-[90%] md:w-[70%] xl:w-[55%] mt-32">
+                    <div className="my-auto pl-8 lg:pl-16 xl:pl-24 font-bold  text-3xl md:text-4xl xl:text-4xl w-[90%] md:w-[70%] xl:w-[55%] mt-16md:mt-32">
                         <div className="py-6 xl:py-7">
                             <div className="relative inline-block text-[#0063FE] my-1">
                                 <span className="relative z-10 animate-fade">From Insight to Impact</span>
@@ -96,7 +96,7 @@ export default function Home() {
                     Partner with us to stay ahead in a competitive landscape and accelerate your business growth.
                 </div>
 
-                <div className="mt-6 flex flex-row flex-wrap xl:flex-nowrap items-center justify-center text-center w-4/5 lg:w-[700px] xl:w-[90%] z-30">
+                <div className="z-40 mt-6 flex flex-row flex-wrap xl:flex-nowrap items-center justify-center text-center w-4/5 lg:w-[700px] xl:w-[90%] z-30">
                     <div className="feature-box">
                         <div className="font-semibold text-2xl">
                             24/7 Expert Support
@@ -121,7 +121,7 @@ export default function Home() {
                         In-depth analysis to understand your business challenges and tailor our solutions to drive growth and efficiency.
                         </div>
                     </div>
-                    <div className="feature-box">
+                    <div className="feature-box z-40">
                         <div className="font-semibold text-2xl">
                         State-of-the-Art Solutions
                         </div>
@@ -132,14 +132,14 @@ export default function Home() {
                 </div>
                 
                 <div className="mt-8 md:mt-24 lg:mt-32 xl:mt-40 flex relative pb-24">
-                    <div className="fixed absolute -top-[300px] left-0 z-10">
+                    <div className="fixed absolute -top-[300px] left-0 z-0">
                         <img className="h-[1000px]" src="/homepage_assets/Ellipse 6.png"></img>
                     </div>
-                    <div className="fixed absolute -top-[400px] right-0 z-10">
+                    <div className="fixed absolute -top-[400px] right-0 z-0">
                         <img className="h-[1000px]" src="/homepage_assets/Ellipse 7.png"></img>
                     </div>
                     <div className="w-[50%] lg:w-[65%]"></div>
-                    <div>
+                    <div className="z-40">
                         <div className="text-4xl md:text-5xl font-bold w-[70%] leading-tight">
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-grad-2-start to-grad-2-end">Driving Growth </span>
                             with Data Analytics and Automation
@@ -190,13 +190,13 @@ export default function Home() {
 
             {/* Call to Action Section */}
             <section className="min-h-max h-[400px] md:h-[300px] bg-dark-blue-2 w-full flex flex-col justify-center items-center">
-                <div className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-grad-1-start via-grad-1-mid to-grad-1-end font-semibold">
+                <div className="text-xl lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-grad-1-start via-grad-1-mid to-grad-1-end font-semibold">
                     Arxero
                 </div>
-                <div className="mt-2 text-white text-4xl font-bold text-center mx-12">
+                <div className="mt-2 text-white text-3xl lg:text-4xl font-bold text-center mx-12">
                     One-Stop Digital Solution for All Your Business Needs
                 </div>
-                <div className="group mt-6 w-[250px] border-2 hover:bg-[#434591] hover:bg-opacity-30 border-[#434591] text-[#434591] h-[65px] rounded-full text-center py-3 text-2xl font-semibold cursor-pointer">
+                <div className="group mt-6 w-[170px] md:w-[250px] border-2 hover:bg-[#434591] hover:bg-opacity-30 border-[#434591] text-[#434591] h-[60px] md:h-[65px] rounded-full text-center py-3 text-xl md:text-2xl font-semibold cursor-pointer">
                     Get Started <FontAwesomeIcon icon={faArrowRight} className="group-hover:translate-x-1 transition-all"></FontAwesomeIcon>
                 </div>
             </section>
