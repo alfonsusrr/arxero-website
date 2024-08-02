@@ -5,7 +5,7 @@ export default function Footer() {
 
     return (
         <div>
-            <div className="w-full xl:h-[440px] 2xl:h-[460px] bg-pastel-blue flex flex-row justify-start items-start p-20">
+            <div className="w-full xl:h-[440px] 2xl:h-[460px] bg-pastel-blue flex flex-row justify-start items-start px-10 lg:px-20 py-20">
                 <div className="mx-5 lg:mx-0 w-[360px] lg:w-[280px] 2xl:w-1/4 flex flex-col items-start">
                     <Link to="/" reloadDocument className="w-32 cursor-pointer">
                         <img src="/arxero_light_1.png"></img>

@@ -48,7 +48,7 @@ export default function HeaderArxero(props) {
                     }
                 </div>
                 { isSignIn && (
-                    <div className="cursor-pointer flex flex-row ml-auto ml-2 xl:ml-8 transition-all border-main-dark-blue border-[2px] font-medium hover:bg-main-dark-blue hover:text-white rounded-3xl text-lg h-8 w-30 xl:text-xl xl:h-12 xl:w-32 px-2 xl:px-6 pt-[2px] xl:pt-[6px]">
+                    <div className="cursor-pointer flex flex-row ml-auto ml-2 xl:ml-8 transition-all border-main-dark-blue border-[2px] font-medium hover:bg-main-dark-blue hover:text-white rounded-3xl text-lg h-10 w-30 xl:text-xl xl:h-12 xl:w-32 px-3 xl:px-6 pt-[2px] xl:pt-[6px]">
                         <div><FontAwesomeIcon className="mr-2" icon={faUser}></FontAwesomeIcon></div>
                         <div>Login</div>
                     </div>
@@ -58,8 +58,9 @@ export default function HeaderArxero(props) {
                 <img className="h-12 xl:h-16 ml-4 md:ml-16" src={logoSource}></img>
                 <div className="flex ml-auto cursor-pointer text-main-dark-blue text-lg items-center">
                 { isSignIn && (
-                        <div className="mx-8 xl:ml-8 transition-all border-main-dark-blue border-[2px] font-medium hover:bg-main-dark-blue hover:text-white rounded-2xl text-lg h-10 w-30 xl:text-xl xl:h-14 xl:w-32 px-4 xl:px-7 pt-[2px] xl:pt-[9px]">
-                            Sign In
+                        <div className="cursor-pointer flex flex-row ml-auto ml-2 xl:ml-8 transition-all border-main-dark-blue border-[2px] font-medium hover:bg-main-dark-blue hover:text-white rounded-3xl text-lg h-10 w-30 xl:text-xl xl:h-12 xl:w-32 px-3 xl:px-6 pt-[2px] xl:pt-[6px] mr-4">
+                            <div><FontAwesomeIcon className="mr-2" icon={faUser}></FontAwesomeIcon></div>
+                            <div>Login</div>
                         </div>
                     )
                 }

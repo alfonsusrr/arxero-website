@@ -10,13 +10,13 @@ export default function About() {
         document.title = 'Arxero | About'; // Quick solution
     }, []);
     return (
-        <div className="bg-main-bg-arxero h-screen">
+        <div className="bg-main-bg-arxero min-h-max">
             <HeaderArxero active="About Us"></HeaderArxero>
-            <section id="about-arxero" className="h-[calc(100%-7rem)] p-32">
+            <section id="about-arxero" className="h-[calc(100%-7rem)] p-12 md:p-16 lg:p-24 xl:p-32">
                 <div className="flex">
-                    <div className="w-1/2">
+                    <div className="w-full md:w-4/5 lg:w-3/4 xl:w-1/2">
                         <div className="text-xl font-semibold">About Arxero</div>
-                        <div className="mt-2 text-5xl font-bold w-[700px]">
+                        <div className="mt-2 text-5xl font-bold w-full xl:w-[700px]">
                             Empowering Digital Transformation in Indonesia and Beyond
                         </div>
                         <div className="mt-10 text-lg arxero-text-gray">
@@ -37,44 +37,44 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <section id="meet-our-team" className="relative bg-dark-blue-2 h-[500px] w-full px-24 pt-20 flex">
+            <section id="meet-our-team" className="relative bg-dark-blue-2 min-h-max w-full px-12 xl:px-20 pt-20 py-24 flex flex-wrap xl:flex-nowrap">
                 <div className="fixed absolute -top-10 right-0">
                     <img className="h-[600px]" src="/about_assets/Ellipse 3.png"></img>
                 </div>
                 <div className="fixed absolute -top-5 left-0">
                     <img className="h-[600px]" src="/about_assets/Ellipse 2.png"></img>
                 </div>
-                <div className="w-1/3 xl:w-2/5">
+                <div className="lg:w-[60%] xl:w-1/3 pr-12">
                     <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-grad-1-start via-grad-1-mid to-grad-1-end">Meet Our Team</div>
-                    <div className="mt-16 text-xl text-arxero-text-light-gray w-[400px] ">
+                    <div className="mt-16 text-xl text-arxero-text-light-gray w-full">
                         Founded by three undergraduates from CUHK Shenzhen, our team brings together 
                         a unique blend of passion, innovation, and expertise. We strive to transform 
                         ideas into impactful solutions, driven by our diverse skills and shared vision.
                     </div>
                 </div>
-                <div className="flex">
-                    <div className="mr-1 w-[280px] flex flex-col items-center">
-                        <div className="bg-white w-[250px] h-[300px] rounded-3xl"></div>
+                <div className="flex flex-wrap w-full z-40 mt-10 xl:mt-0 justify-center align-center">
+                    <div className="mt-6 mr-1 w-[280px] flex flex-col items-center">
+                        <div className="bg-white h-[250px] w-[200px] lg:h-[300px] lg:w-[250px] rounded-3xl"></div>
                         <div className="mt-3 text-arxero-text-light-gray text-center text-lg font-semibold">Alfonsus Rodriques Rendy</div>
                         <div className="text-gray-500 text-center"> Co-Founder, Technical & Design</div>
                     </div>
-                    <div className="mr-1 w-[280px] flex flex-col items-center">
-                        <div className="bg-white h-[300px] w-[250px] rounded-3xl"></div>
+                    <div className="mt-6 mr-1 w-[280px] flex flex-col items-center">
+                        <div className="bg-white h-[250px] w-[200px] lg:h-[300px] lg:w-[250px] rounded-3xl"></div>
                         <div className="mt-3 text-arxero-text-light-gray text-center text-lg font-semibold">Stephen Kowinto</div>
                         <div className="text-gray-500 text-center"> Co-Founder, Business & Operations</div>
                     </div>
-                    <div className="w-[280px] flex flex-col items-center">
-                        <div className="bg-white h-[300px] w-[250px] rounded-3xl"></div>
+                    <div className="mt-6 w-[280px] flex flex-col items-center">
+                        <div className="bg-white h-[250px] w-[200px] lg:h-[300px] lg:w-[250px] rounded-3xl"></div>
                         <div className="mt-3 text-arxero-text-light-gray text-center text-lg font-semibold">Nicholas Oh</div>
                         <div className="text-gray-500 text-center"> Co-Founder, Technical & Product</div>
                     </div>
                 </div>
             </section>
-            <section id="join-us" className="relative bg-main-bg-arxero flex h-[500px] px-32 pt-20 pb-10 items-center justify-center" >
+            <section id="join-us" className="relative bg-main-bg-arxero flex flex-wrap lg:flex-nowrap min-h-max px-12 lg:px-32 pt-20 pb-10 items-center justify-center" >
                 <div className="fixed absolute -top-10 right-0">
                     <img className="h-[600px]" src="about_assets/Ellipse 1.png"></img>
                 </div>
-                <div className="w-2/5 h-full">
+                <div className="w-3/4 lg:w-1/2 xl:w-2/5 h-full">
                     <div className="text-2xl font-semibold">Grow With Arxero</div>
                     <div className="mt-3 text-4xl font-bold w-[370px]">Join Us Now and Unlock Your Potential</div>
                     <div className="mt-5 text-lg text-arxero-text-gray">
@@ -83,7 +83,7 @@ export default function About() {
                     help expand our company. Join us on our journey to make a difference through innovation.
                     </div>
                 </div>
-                <div className="ml-auto mr-20 h-full mb-28">
+                <div className="hidden lg:block ml-auto xl:mr-20 h-full mb-28">
                 <Lottie options={{
                         loop: true,
                         autoplay: true,
@@ -93,6 +93,17 @@ export default function About() {
                         }
                 }} 
                 width={450}></Lottie>
+                </div>
+                <div className="lg:hidden h-full mb-28">
+                <Lottie options={{
+                        loop: true,
+                        autoplay: true,
+                        animationData: joinUsIcon,
+                        rendererSettings: {
+                        preserveAspectRatio: "xMidYMid slice"
+                        }
+                }} 
+                width={350}></Lottie>
                 </div>
             </section>
             <Footer></Footer>

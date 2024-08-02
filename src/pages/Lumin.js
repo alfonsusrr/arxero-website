@@ -61,7 +61,7 @@ export default function Lumin() {
         "endText": "languages"
     }, {
         "startText": "we integrates",
-        "number": "8",
+        "number": "8+",
         "endText": "business channels"
     },]
 
@@ -260,24 +260,26 @@ export default function Lumin() {
                 </div>
             </section>
 
-            <section id="lumin-sense" className="relative w-full h-[600px] bg-white px-28 py-36 flex">
+            <section id="lumin-sense" className="relative w-full min-h-max xl:h-[600px] bg-white px-28 py-36 flex">
                 <div className="fixed absolute -top-12 left-0 z-20">
                     <img className="h-[600px]" src="/lumin_assets/Ellipse 3.png"></img>
                 </div>
-                <div className="w-2/5 z-20">
-                    <div className="sec-heading text-left text-2xl">Introducing Lumin Sense</div>
-                    <div className="text-4xl font-bold mt-1">Smart Detection for Seamless Support</div>
-                    <div className="text-arxero-text-gray mt-10 text-lg">
-                        Our cutting-edge feature designed to detect when the AI bot encounters difficulties 
-                        with customer interactions. Lumin Sense swiftly alerts your admin or team member, 
-                        ensuring immediate attention to potential issues and maintaining seamless customer service. 
-                        Stay proactive and responsive with Lumin Sense, safeguarding your business reputation and 
-                        customer satisfaction.
+                <div className="flex flex-row">
+                    <div className="lg:w-[35%] xl:w-2/5 z-20">
+                        <div className="sec-heading text-left text-2xl">Introducing Lumin Sense</div>
+                        <div className="text-4xl font-bold mt-1">Smart Detection for Seamless Support</div>
+                        <div className="text-arxero-text-gray mt-10 text-lg">
+                            Our cutting-edge feature designed to detect when the AI bot encounters difficulties 
+                            with customer interactions. Lumin Sense swiftly alerts your admin or team member, 
+                            ensuring immediate attention to potential issues and maintaining seamless customer service. 
+                            Stay proactive and responsive with Lumin Sense, safeguarding your business reputation and 
+                            customer satisfaction.
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="why-us" className="w-full pt-8 bg-main-dark-blue h-[550px] md:h-[360px] flex flex-col items-center justify-start select-none">
+            <section id="why-us" className="w-full pt-8 bg-main-dark-blue min-h-max flex flex-col items-center justify-start select-none py-10">
                 <div className="text-3xl text-white mt-8 font-semibold text-center">We create platforms that deliver success</div>
                 <div className="flex flex-row justify-center md:justify-start items-center text-white mt-8 flex-wrap md:flex-nowrap">
                     {

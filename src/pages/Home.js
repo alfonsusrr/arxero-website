@@ -12,7 +12,7 @@ export default function Home() {
         document.title = 'Arxero Technologies';
     }, []);
     return (
-        <div className="bg-main-bg-arxero h-screen max-w-full min-w-full">
+        <div className="bg-main-bg-arxero h-screen min-h-max max-w-full min-w-full">
             <HeaderArxero active="Homepage"></HeaderArxero>
             <div className="w-full h-[calc(100%-7rem)] select-none">
                 {/* Welcome Section */}
@@ -23,36 +23,36 @@ export default function Home() {
                     <img className="h-[600px]" src="/homepage_assets/Ellipse 3.png"></img>
                 </div>
                 <div className="flex flex-row relative items-end h-full">
-                    <div className="my-auto pl-18 xl:pl-24 font-bold sm:text-3xl md:text-4xl xl:text-5xl w-[55%] mt-32">
-                        <div className="py-7">
-                            <div className="relative inline-block text-[#0063FE] my-3">
+                    <div className="my-auto pl-18 pl-16 xl:pl-24 font-bold  text-3xl md:text-4xl xl:text-4xl w-[90%] md:w-[70%] xl:w-[55%] mt-32">
+                        <div className="py-6 xl:py-7">
+                            <div className="relative inline-block text-[#0063FE] my-1">
                                 <span className="relative z-10 animate-fade">From Insight to Impact</span>
-                                <span className="absolute top-8 left-[-0.25em] w-[110%] h-[0.6em] bg-[#BAD5FF] animate-fade-right animate-duration-[1s] animate-delay-[80ms] animate-ease-in-out"></span>
+                                <span className="absolute top-6 left-[-0.25em] w-[110%] h-[0.6em] bg-[#BAD5FF] animate-fade-right animate-duration-[1s] animate-delay-[80ms] animate-ease-in-out"></span>
                             </div>
                             <div className="my-2 animate-fade">We Are Empowering</div>
                             <div className="my-2 animate-fade">your Digital Transformation</div>
                         </div>
-                        <div className="mt-28 border-b border-[#8F8F8F] mr-8"></div>
-                        <div className="flex flex-row pt-14 mr-8">
-                            <div className="w-1/2 px-3">
+                        <div className="lg:mt-8 xl:mt-28 border-b border-[#8F8F8F] mr-8"></div>
+                        <div className="flex flex-row flex-wrap xl:flex-nowrap py-14 mr-8">
+                            <div className="w-full xl:w-1/2 p-3">
                                 <div className="text-2xl">VISION</div>
-                                <div className="text-base mt-6 font-normal">
+                                <div className="text-base mt-4 font-normal">
                                     To be a leading technology company that transforms business operations 
                                     through innovative and scalable solutions, driving efficiency and growth 
                                     for our clients worldwide.
                                 </div>
                             </div>
-                            <div className="w-1/2 px-3">
+                            <div className="w-full xl:w-1/2 p-3">
                                 <div className="text-2xl">MISSION</div>
-                                <div className="text-base mt-6 font-normal">
+                                <div className="text-base mt-4 font-normal">
                                     To push state-of-the-art solutions for modern business needs, 
                                     empowering companies to thrive in an ever-evolving technological landscape.
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="ml-auto right-0">
-                        <img className="" src="/homepage_assets/Placeholder 1.png"></img>
+                    <div className="ml-auto right-0 lg:block hidden">
+                        <img className="h-[350px] xl:h-full object-cover rounded-tl-5xl" src="/homepage_assets/Placeholder 1.png"></img>
                         <div className="absolute bottom-0 right-0 w-[400px] h-[200px] bg-[#0C2566] bg-opacity-50 rounded-tl-3xl p-8 backdrop-blur-sm">
                             <div className="text-white font-semibold text-2xl opacity-100">
                                 Ready for Transform Your Business With Us?
@@ -65,7 +65,7 @@ export default function Home() {
                 </div>
             </div>
             {/* Tagline Section */}
-            <section className="bg-dark-blue-2 relative h-[450px] py-24 px-36">
+            <section className="bg-dark-blue-2 relative min-h-max py-24 px-16 lg:px-36">
                 <div className="fixed absolute top-3 left-0">
                     <img className="h-[600px]" src="/homepage_assets/Ellipse 4.png"></img>
                 </div>
@@ -73,7 +73,7 @@ export default function Home() {
                     <img className="h-[600px]" src="/homepage_assets/Ellipse 5.png"></img>
                 </div>
                 <div className="flex">
-                    <div className="w-2/5">
+                    <div className="w-4/5 lg:w-2/5">
                         <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-grad-1-start via-grad-1-mid to-grad-1-end">
                             Your Technology Partner for Business Success
                         </div>
@@ -86,17 +86,17 @@ export default function Home() {
                 </div>
             </section>
             {/* Key Features Section */}
-            <section className="h-[1300px] pt-12 bg-main-bg-arxero">
-                <div className="font-semibold text-3xl text-center w-1/3 mx-auto">
+            <section className="min-h-min pt-12 bg-main-bg-arxero flex flex-col justify-center items-center">
+                <div className="font-semibold text-3xl text-center px-10 lg:w-1/3 mx-auto">
                     Accelerate Your Business Growth with Modern Technology
                 </div>
-                <div className="mt-4 text-lg text-center w-1/2 mx-auto text-arxero-text-gray">
+                <div className="mt-4 text-lg text-center px-10 lg:w-1/2 mx-auto text-arxero-text-gray">
                     Our AI-driven customer service platforms, advanced data analytics, 
                     and automation tools enhance efficiency and customer engagement. 
                     Partner with us to stay ahead in a competitive landscape and accelerate your business growth.
                 </div>
 
-                <div className="mt-6 flex flex-row items-center justify-center text-center mx-auto w-4/5 z-30">
+                <div className="mt-6 flex flex-row flex-wrap xl:flex-nowrap items-center justify-center text-center w-4/5 lg:w-[700px] xl:w-[90%] z-30">
                     <div className="feature-box">
                         <div className="font-semibold text-2xl">
                             24/7 Expert Support
@@ -131,16 +131,16 @@ export default function Home() {
                     </div>
                 </div>
                 
-                <div className="mt-40 flex relative">
+                <div className="mt-8 md:mt-24 lg:mt-32 xl:mt-40 flex relative pb-24">
                     <div className="fixed absolute -top-[300px] left-0 z-10">
                         <img className="h-[1000px]" src="/homepage_assets/Ellipse 6.png"></img>
                     </div>
                     <div className="fixed absolute -top-[400px] right-0 z-10">
                         <img className="h-[1000px]" src="/homepage_assets/Ellipse 7.png"></img>
                     </div>
-                    <div className="w-[65%]"></div>
+                    <div className="w-[50%] lg:w-[65%]"></div>
                     <div>
-                        <div className="text-5xl font-bold w-[70%] leading-tight">
+                        <div className="text-4xl md:text-5xl font-bold w-[70%] leading-tight">
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-grad-2-start to-grad-2-end">Driving Growth </span>
                             with Data Analytics and Automation
                         </div>
@@ -160,28 +160,28 @@ export default function Home() {
                 </div>
             </section>
             {/* Product Catalogues */}
-            <section className="relative bg-dark-blue-2 w-full h-[640px] p-24" id="services">
+            <section className="relative bg-dark-blue-2 w-full min-h-max p-16 lg:p-24 z-50" id="services">
                 <div className="fixed absolute top-64 -left-7 z-10">
                     <img className="h-[500px]" src="/homepage_assets/Ellipse 8.png"></img>
                 </div>
                 <div className="fixed absolute top-10 right-0">
                     <img className="h-[500px]" src="/homepage_assets/Ellipse 9.png"></img>
                 </div>
-                <Link to="/lumin" reloadDocument className="z-20 flex items-center bg-white rounded-3xl border border-dark-blue-2-stroke h-[250px] bg-glowing-radial-box hover:bg-glowing-radial-box-raised from-grad-3-start via-grad-3-end to-grad-3-end bg-opacity-20 cursor-pointer transition-all">
-                    <div className="ml-20 text-[#05BCE6] text-6xl font-bold">
+                <Link to="/lumin" reloadDocument className="z-20 flex flex-wrap items-center bg-white rounded-3xl border border-dark-blue-2-stroke min-h-max py-12 px-12 lg:px-16  bg-glowing-radial-box hover:bg-glowing-radial-box-raised from-grad-3-start via-grad-3-end to-grad-3-end bg-opacity-20 cursor-pointer transition-all">
+                    <div className="text-[#05BCE6] text-4xl lg:text-6xl font-bold w-[38%] my-3">
                         <img className="w-12 inline-block mr-3 mb-4" src="lumin_icon.png"></img>
                         Lumin
                     </div>
-                    <div className="text-white text-xl ml-auto w-[300px] text-right mr-10">
+                    <div className="text-white text-xl md:ml-auto w-[300px] md:text-right">
                         Automated intelligent customer service built with state-of-the-art technology
                     </div>
                 </Link>
-                <div className="z-20 select-none mt-4 flex items-center bg-white rounded-3xl border border-dark-blue-2-stroke h-[250px] bg-glowing-radial-box hover:bg-glowing-radial-box-raised from-grad-3-start via-grad-3-end to-grad-3-end bg-opacity-20 transition-all">
+                <div className="z-20 select-none mt-4 flex flex-wrap items-center bg-white rounded-3xl border border-dark-blue-2-stroke min-h-max py-12 px-12 lg:px-16 bg-glowing-radial-box hover:bg-glowing-radial-box-raised from-grad-3-start via-grad-3-end to-grad-3-end bg-opacity-20 transition-all">
                     <div className="text-center w-full text-transparent bg-clip-text bg-gradient-to-r from-grad-4-start via-grad-4-mid to-grad-4-end z-30">
                         <div className="text-3xl font-light">
                             New Products are
                         </div>
-                        <div className="text-6xl font-bold h-20">
+                        <div className="text-4xl lg:text-6xl font-bold h-20">
                             Coming Soon (｡•̀ᴗ-)✧
                         </div>
                     </div>
@@ -189,11 +189,11 @@ export default function Home() {
             </section>
 
             {/* Call to Action Section */}
-            <section className="xl:h-[300px] bg-dark-blue-2 w-full flex flex-col justify-center items-center">
+            <section className="min-h-max h-[400px] md:h-[300px] bg-dark-blue-2 w-full flex flex-col justify-center items-center">
                 <div className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-grad-1-start via-grad-1-mid to-grad-1-end font-semibold">
                     Arxero
                 </div>
-                <div className="mt-2 text-white text-4xl font-bold">
+                <div className="mt-2 text-white text-4xl font-bold text-center mx-12">
                     One-Stop Digital Solution for All Your Business Needs
                 </div>
                 <div className="group mt-6 w-[250px] border-2 hover:bg-[#434591] hover:bg-opacity-30 border-[#434591] text-[#434591] h-[65px] rounded-full text-center py-3 text-2xl font-semibold cursor-pointer">

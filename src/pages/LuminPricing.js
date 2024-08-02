@@ -172,13 +172,13 @@ export default function LuminPricing() {
                 <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-lumin-grad-start via-lumin-grad-mid to-lumin-grad-end max-w-max">
                     Choose Your Plan
                 </div>
-                <div className="flex items-center my-8">
+                <div className="flex flex-wrap lg:flex-nowrap items-center my-8 w-[400px] lg:min-w-max">
                     {
                         priceBoxes.map((plan, idx) => {
                             return (
                                 <div className="price-box">
                                     <div className={`price-box-header ${plan.headerGradient}`}>
-                                        <div className="text-2xl font-bold text-white py-3 px-8 bg-white bg-opacity-5  rounded-full max-w-max">
+                                        <div className="text-xl xl:text-2xl font-bold text-white py-3 px-8 bg-white bg-opacity-5  rounded-full max-w-max">
                                             {plan.title}
                                         </div>
                                         <div className={`price-payment-box ${plan.priceColor}`}>
@@ -211,7 +211,7 @@ export default function LuminPricing() {
                                             }
                                         </div>
                                     </div>
-                                    <div className="absolute top-[250px] px-5 py-2 flex flex-col">
+                                    <div className="absolute top-[210px] xl:top-[250px] px-5 py-2 flex flex-col">
                                         <div className="price-box__feature-list">
                                             <div className={`price_box__feature-icon ${plan.features.convTotal !== false ? plan.checkmarkColor : "bg-gray-400"}`}>
                                                 <FontAwesomeIcon icon={plan.features.convTotal ? faCheck : faXmark}></FontAwesomeIcon>
@@ -302,15 +302,15 @@ export default function LuminPricing() {
                     }
                 </div>
             </section>
-            <section id="performance-metrics" className="relative bg-dark-blue-2 min-h-min mt-12 py-8 flex flex-col items-center">
-                <div className="fixed absolute top-24 left-0">
+            <section id="performance-metrics" className="relative bg-dark-blue-2 min-h-min mt-12 py-8 flex flex-col items-center justify-center">
+                <div className="fixed absolute top-80 lg:top-24 left-0">
                     <img className="h-[600px]" src="/luminpricing_assets/Ellipse 1.png"></img>
                 </div>
                 <div className="fixed absolute top-0 right-0">
                     <img className="h-[600px]" src="/luminpricing_assets/Ellipse 2.png"></img>
                 </div>
                 <div className="text-center text-transparent bg-clip-text bg-gradient-to-r from-grad-1-start via-grad-1-mid to-grad-1-end text-4xl font-bold p-2 mb-8">Key System Metrics</div>
-                <div className="flex flex-row flex-wrap items-center xl:w-[1000px]">
+                <div className="flex flex-row flex-wrap items-center justify-center min-w-min xl:w-[1000px]">
                     {
                         keyMetrics.map((metric) => {
                             return (
