@@ -12,9 +12,9 @@ export default function Home() {
         document.title = 'Arxero Technologies';
     }, []);
     return (
-        <div className="bg-main-bg-arxero min-h-max w-screen">
+        <div className="bg-main-bg-arxero min-h-max">
             <HeaderArxero active="Homepage"></HeaderArxero>
-            <div className="w-full h-[calc(100vh-7rem)] select-none">
+            <section id="welcome" className="w-full h-[calc(100vh-7rem)] select-none">
                 {/* Welcome Section */}
                 <div className="fixed absolute top-24">
                     <img className="h-[600px]" src="/homepage_assets/Ellipse 2.png"></img>
@@ -63,7 +63,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             {/* Tagline Section */}
             <section className="bg-dark-blue-2 relative min-h-max py-24 px-16 lg:px-36">
                 <div className="fixed absolute top-3 left-0">
@@ -160,7 +160,7 @@ export default function Home() {
                 </div>
             </section>
             {/* Product Catalogues */}
-            <section className="relative bg-dark-blue-2 w-full min-h-max p-16 lg:p-24 z-50" id="services">
+            <section className="relative bg-dark-blue-2 w-full min-h-max p-16 lg:p-24" id="services">
                 <div className="fixed absolute top-64 -left-7 z-10">
                     <img className="h-[500px]" src="/homepage_assets/Ellipse 8.png"></img>
                 </div>

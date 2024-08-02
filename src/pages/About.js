@@ -10,7 +10,7 @@ export default function About() {
         document.title = 'Arxero | About'; // Quick solution
     }, []);
     return (
-        <div className="bg-main-bg-arxero min-h-max w-screen">
+        <div className="bg-main-bg-arxero min-h-max ">
             <HeaderArxero active="About Us"></HeaderArxero>
             <section id="about-arxero" className="h-[calc(100%-7rem)] p-12 md:p-16 lg:p-24 xl:p-32">
                 <div className="flex">

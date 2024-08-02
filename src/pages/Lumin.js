@@ -38,7 +38,7 @@ export default function Lumin() {
         "desc": "Scaling human support teams is costly and challenging, especially during growth or demand spikes like sales events. ",
         "icon": faUpRightAndDownLeftFromCenter
     }, {
-        "title": "Data Management & Analysis",
+        "title": "Data Analysis & Management",
         "desc": "Manual data collection and analysis is time-consuming and error-prone, often leading to delayed or missed insights due to inefficient processes",
         "icon": faDatabase
     }, {
@@ -145,12 +145,12 @@ export default function Lumin() {
 
 
     return (
-        <div className="bg-main-bg-lumin min-h-screen w-screen">
+        <div className="bg-main-bg-lumin min-h-screen">
             <HeaderLumin></HeaderLumin>
-            <div className="h-[calc(100vh-theme(height.header))] flex flex-col justify-start items-center">
-                <div className="text-gray-500 text-2xl my-3 font-semibold w-32 rounded-full border-2 border-gray-300 text-center h-12 py-1 select-none">Lumin</div>
-                <div className="text-5xl font-bold my-2 text-transparent bg-clip-text bg-gradient-to-r from-lumin-grad-start via-lumin-grad-mid to-lumin-grad-end">illuminate</div>
-                <div className="text-5xl font-bold my-2 text-center">Your Customer Experience</div>
+            <div className="h-[calc(100vh-7rem)] flex flex-col justify-start items-center">
+                <div className="text-gray-500 text-lg md:text-2xl my-3 font-semibold w-32 rounded-full border-2 border-gray-300 text-center h-7md:h-12 py-1 select-none">Lumin</div>
+                <div className="text-3xl md:text-5xl font-bold my-1 md:my-2 text-transparent bg-clip-text bg-gradient-to-r from-lumin-grad-start via-lumin-grad-mid to-lumin-grad-end">illuminate</div>
+                <div className="text-3xl md:text-5xl font-bold my-1 md:my-2 text-center">Your Customer Experience</div>
             </div>
 
             <div className="
@@ -164,18 +164,18 @@ export default function Lumin() {
                         An advanced AI-powered conversation system designed to enhance business customer service by providing quick, accurate, and personalized responses equipped with automation and analytics tools.
                     </div>
                 </div>
-            </div> 
+            </div>
 
-            <div className="w-full flex flex-col items-center justify-start pt-12">
+            <div className="flex flex-col items-center justify-start pt-12">
                 <div className="sec-heading">Customer Service Challenges</div>
-                <div className="flex flex-row mt-8 flex-wrap xl:mx-0 justify-center">
+                <div className="flex flex-row mt-8 flex-wrap lg:w-[1000px] xl:w-full justify-center">
                     { csChallenges.map((el) => {
                         return (
-                            <div className="bg-[#E7F0F7] my-4 rounded-5xl mx-3 w-[350px] h-[400px] flex flex-col items-center p-8 border border-[#C6C6C6] select-none hover:drop-shadow-xl">
-                                <div className="flex flex-col justify-center h-40 text-6xl text-main-dark-blue">
+                            <div className="bg-[#E7F0F7] my-4 rounded-5xl mx-3 w-[350px] xl:w-[23%] h-[450px] flex flex-col items-center p-8 border border-[#C6C6C6] select-none hover:drop-shadow-xl">
+                                <div className="flex flex-col justify-center h-28 text-6xl text-main-dark-blue">
                                     <FontAwesomeIcon icon={el.icon}/>
                                 </div>
-                                <div className="h-40 font-bold text-3xl text-center text-main-dark-blue flex flex-col justify-center">
+                                <div className="h-20 mb-6 font-bold text-3xl text-center text-main-dark-blue flex flex-col justify-center">
                                     {el.title}
                                 </div>
                                 <div className="font-normal text-lg text-center">
@@ -187,7 +187,7 @@ export default function Lumin() {
                 </div>
             </div>   
 
-            <section id="dive-deep" className="w-full flex flex-col items-center justify-start pt-40">
+            <section id="dive-deep" className="flex flex-col items-center justify-start pt-40">
                 <div className="sec-heading">Dive Deep Into Arxero Lumin</div>
                 <div className="mt-6 dive-deep-sec bg-pastel-blue">
                     <div className="md:mb-12">
@@ -260,7 +260,7 @@ export default function Lumin() {
                 </div>
             </section>
 
-            {/* <section id="lumin-sense" className="relative w-full min-h-max xl:h-[600px] bg-white px-28 py-36 flex">
+            <section id="lumin-sense" className="relative w-full min-h-max xl:h-[600px] bg-white px-28 py-36 flex">
                 <div className="fixed absolute -top-12 left-0 z-20">
                     <img className="h-[600px]" src="/lumin_assets/Ellipse 3.png"></img>
                 </div>
@@ -297,7 +297,7 @@ export default function Lumin() {
                         })
                     }
                 </div>
-            </section> */}
+            </section>
             
            <section id="case-study" className="w-full h-full md:h-[650px] p-6 lg:p-14">
                 <div className="my-2 pb-4 sec-heading text-left">Benefits and Use Cases</div>

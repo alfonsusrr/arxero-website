@@ -55,7 +55,7 @@ export default function HeaderArxero(props) {
                 )}
             </div>
             <div className="flex lg:hidden flex-row i items-center h-28 pt-8 p-5">
-                <img className="h-12 xl:h-16 ml-4 md:ml-16" src={logoSource}></img>
+                <Link className="w-1/5 cursor-pointer" to="/"><img className="h-12 xl:h-16 ml-4 md:ml-16" src={logoSource}></img></Link>
                 <div className="flex ml-auto cursor-pointer text-main-dark-blue text-lg items-center">
                 { isSignIn && (
                         <div className="cursor-pointer flex flex-row ml-auto ml-2 xl:ml-8 transition-all border-main-dark-blue border-[2px] font-medium hover:bg-main-dark-blue hover:text-white rounded-3xl text-lg h-10 w-30 xl:text-xl xl:h-12 xl:w-32 px-3 xl:px-6 pt-[2px] xl:pt-[6px] mr-4">
