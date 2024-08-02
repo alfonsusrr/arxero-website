@@ -5,8 +5,8 @@ export default function Footer() {
 
     return (
         <div>
-            <div className="w-full xl:h-[440px] 2xl:h-[460px] bg-pastel-blue flex flex-row justify-start items-start px-10 lg:px-20 py-20">
-                <div className="mx-5 lg:mx-0 w-[360px] lg:w-[280px] 2xl:w-1/4 flex flex-col items-start">
+            <div className="w-full xl:h-[440px] 2xl:h-[460px] bg-pastel-blue flex flex-row justify-start items-start px-8 md:px-16 lg:px-20 py-20">
+                <div className="lg:mx-0 w-[360px] lg:w-[280px] 2xl:w-1/4 flex flex-col items-start">
                     <Link to="/" reloadDocument className="w-32 cursor-pointer">
                         <img src="/arxero_light_1.png"></img>
                     </Link>
@@ -60,7 +60,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="pt-10 lg:hidden block flex flex-row flex-wrap px-16 bg-pastel-blue">
+            <div className="pt-10 lg:hidden block flex flex-row flex-wrap px-8 md:px-16 bg-pastel-blue">
                 <div className="flex flex-col w-1/2">
                     <div className="footer-section">
                         <div className="footer-heading">Products</div>
@@ -75,7 +75,7 @@ export default function Footer() {
                         <div className="footer-text">Data-driven Business Solutions</div>
                     </div>
                 </div>
-                <div className="flex flex-col w-1/2 pl-5">
+                <div className="flex flex-col w-1/2 pl-8">
                     <div className="footer-section">
                         <div className="footer-heading">Resources</div>
                         <div className="footer-text">Our Blog</div>
@@ -90,7 +90,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="md:hidden block w-full bg-pastel-blue px-16 pt-10">
+            <div className="md:hidden block w-full bg-pastel-blue px-8 md:px-16 pt-10">
                 <div className="text-2xl xl:text-3xl font-bold">Subscribe to Our Newsletter</div>
                 <div className="flex flex-row mt-4 flex-wrap">
                     <input className="w-full h-[50px] border-input-border-light border-2 rounded-lg bg-input-fill-light p-3 outline-none text-main-dark-blue" placeholder="Your Name"></input>
