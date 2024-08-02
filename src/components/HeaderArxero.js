@@ -73,7 +73,7 @@ export default function HeaderArxero(props) {
                     {
                         links.map((el) =>{
                             return (
-                                <div className="text-xl text-gray-700 font-normal my-4 hover:text-gray-900">{el.title}</div>
+                                <div className="text-xl text-gray-700 font-normal my-4 hover:text-gray-900"> <Link to={el.link} reloadDocument>{el.title}</Link> </div>
                             )
                         })
                     }

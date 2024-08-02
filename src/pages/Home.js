@@ -12,7 +12,7 @@ export default function Home() {
         document.title = 'Arxero Technologies';
     }, []);
     return (
-        <div className="bg-main-bg-arxero h-screen min-h-max max-w-full min-w-full">
+        <div className="bg-main-bg-arxero h-screen min-h-max w-screen">
             <HeaderArxero active="Homepage"></HeaderArxero>
             <div className="w-full h-[calc(100%-7rem)] select-none">
                 {/* Welcome Section */}

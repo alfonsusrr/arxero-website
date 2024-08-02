@@ -145,7 +145,7 @@ export default function Lumin() {
 
 
     return (
-        <div className="bg-main-bg-lumin min-h-screen">
+        <div className="bg-main-bg-lumin min-h-screen w-screen">
             <HeaderLumin></HeaderLumin>
             <div className="h-[calc(100vh-theme(height.header))] flex flex-col justify-start items-center">
                 <div className="text-gray-500 text-2xl my-3 font-semibold w-32 rounded-full border-2 border-gray-300 text-center h-12 py-1 select-none">Lumin</div>
