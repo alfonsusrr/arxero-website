@@ -16,7 +16,7 @@ export default function About() {
                 <div className="flex">
                     <div className="w-full md:w-4/5 lg:w-3/4 xl:w-1/2">
                         <div className="text-xl font-semibold">About Arxero</div>
-                        <div className="mt-2 text-5xl font-bold w-full xl:w-[700px]">
+                        <div className="mt-2 text-3xl lg:text-5xl font-bold w-full xl:w-[700px]">
                             Empowering Digital Transformation in Indonesia and Beyond
                         </div>
                         <div className="mt-10 text-lg arxero-text-gray">
@@ -44,9 +44,9 @@ export default function About() {
                 <div className="fixed absolute -top-5 left-0">
                     <img className="h-[600px]" src="/about_assets/Ellipse 2.png"></img>
                 </div>
-                <div className="lg:w-[60%] xl:w-1/3 pr-12">
-                    <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-grad-1-start via-grad-1-mid to-grad-1-end">Meet Our Team</div>
-                    <div className="mt-16 text-xl text-arxero-text-light-gray w-full">
+                <div className="lg:w-[60%] xl:w-1/3 lg:pr-12">
+                    <div className="text-3xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-grad-1-start via-grad-1-mid to-grad-1-end">Meet Our Team</div>
+                    <div className="mt-8 lg:mt-16 text-lg lg:text-xl text-arxero-text-light-gray w-full">
                         Founded by three undergraduates from CUHK Shenzhen, our team brings together 
                         a unique blend of passion, innovation, and expertise. We strive to transform 
                         ideas into impactful solutions, driven by our diverse skills and shared vision.
@@ -74,9 +74,9 @@ export default function About() {
                 <div className="fixed absolute -top-10 right-0">
                     <img className="h-[600px]" src="about_assets/Ellipse 1.png"></img>
                 </div>
-                <div className="w-3/4 lg:w-1/2 xl:w-2/5 h-full">
+                <div className="w-full lg:w-1/2 xl:w-2/5 h-full">
                     <div className="text-2xl font-semibold">Grow With Arxero</div>
-                    <div className="mt-3 text-4xl font-bold">Join Us Now and Unlock Your Potential</div>
+                    <div className="mt-3 text-3xl lg:text-4xl font-bold">Join Us Now and Unlock Your Potential</div>
                     <div className="mt-5 text-lg text-arxero-text-gray">
                     We are always on the lookout for talented individuals who share our passion for innovation and technology. 
                     We offer internships and career opportunities for those eager to contribute to our mission and 
